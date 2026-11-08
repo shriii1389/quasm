@@ -1,0 +1,92 @@
+name: deep checks
+
+# The expensive experiments, each running the real assembly under RARS many
+# times over. Weekly, plus on demand.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 4 * * 0'      # Sundays, 04:00 UTC
+
+jobs:
+  cross_validate_rars:
+    name: cross-validation including RARS
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: bash tools/fetch_rars.sh
+      - name: All three engines must agree
+        run: python -u tools/cross_validate.py --seed 0 --n 200 --rars
+
+  properties_rars:
+    name: properties against the real assembly
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: bash tools/fetch_rars.sh
+      - run: python -u tools/properties.py --engine rars --n 12
+
+  mutation:
+    name: mutation experiments
+    runs-on: ubuntu-latest
+    # Each mutant confirmed under RARS reassembles the interpreter; the full run
+    # took about 3.5 hours on a shared 4-thread machine.
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: bash tools/fetch_rars.sh
+
+      # Every constant mutant, and every code mutant in the gate kernel and
+      # the measurement routine, against the whole corpus.
+      - name: Mutation, full corpus
+        run: python -u tools/mutate.py --full --all-code
+
+      # The controlled arm: the same programs, every register starting in
+      # |0...0>. Only the inputs change.
+      - name: Mutation, same programs with |0...0> inputs
+        run: python -u tools/mutate.py --full --code-mutants 0 --zero-init-rewrite
+
+      - name: Mutation, |0...0>-initialised programs only
+        run: python -u tools/mutate.py --full --code-mutants 0 --zero-init-only
+
+  fuzz:
+    name: differential fuzzing, long run
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: bash tools/fetch_rars.sh
+      - run: python -u tools/fuzz.py --n 5000 -j 4

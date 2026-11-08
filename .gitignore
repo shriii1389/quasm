@@ -1,0 +1,52 @@
+# Only source, tests, docs and the built paper belong in this repo. Everything
+# below is either fetched, generated, or personal to one machine.
+
+# --- Third-party binaries, fetched on demand --------------------------------
+# The RARS jar comes from tools/fetch_rars.sh, which checks its SHA-256. It is
+# not ours to redistribute.
+*.jar
+
+# QuasmServer.class, compiled on first use by tools/rars_server.py
+tools/build/
+*.class
+
+# --- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# --- Output the tools write where they are told -----------------------------
+# fuzz.py --findings DIR, cross_validate.py --dump DIR; these are the names the
+# docs use. mutate.py works in the system temp directory and leaves nothing here.
+findings/
+dump/
+*.log
+
+# --- LaTeX build artifacts (paper/) -----------------------------------------
+# quasm.bbl is deliberately NOT ignored: arXiv does not run BibTeX, so the
+# generated .bbl has to ship with the source. quasm.pdf is checked in too.
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz
+paper/*.blg
+paper/*.bcf
+paper/*.run.xml
+
+# --- Operating systems and editors -------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.vscode/
+.idea/

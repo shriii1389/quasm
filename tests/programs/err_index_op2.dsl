@@ -1,0 +1,5 @@
+# two-qubit gate on a qubit past the end of the register
+# expect_error: Qubit index out of range
+qubit q[2]
+qubitop2 q[0],q[2] = CN
+end

@@ -1,0 +1,15 @@
+# Shell scripts must keep LF endings: a CRLF in the shebang makes Linux report
+# "bad interpreter", which is how a repo developed on Windows breaks its own CI.
+*.sh text eol=lf
+
+# The DSL corpus and the assembly are read by tooling that splits on \n.
+*.dsl text eol=lf
+*.s text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+
+# Never touch the RARS jar, built PDFs or screenshots.
+*.jar binary
+*.pdf binary
+*.png binary
+*.md text eol=lf

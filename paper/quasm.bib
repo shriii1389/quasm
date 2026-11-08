@@ -1,0 +1,449 @@
+% Bibliography for the QuAsm paper.
+%
+% Note on completeness: where a field could not be verified with confidence it
+% is omitted rather than guessed. An omitted page range is a gap; an invented
+% one is a defect.
+
+% ---------------------------------------------------------------------------
+% Differential testing
+% ---------------------------------------------------------------------------
+
+@article{mckeeman1998,
+  author  = {McKeeman, William M.},
+  title   = {Differential Testing for Software},
+  journal = {Digital Technical Journal},
+  volume  = {10},
+  number  = {1},
+  pages   = {100--107},
+  year    = {1998},
+}
+
+@inproceedings{csmith,
+  author    = {Yang, Xuejun and Chen, Yang and Eide, Eric and Regehr, John},
+  title     = {Finding and Understanding Bugs in {C} Compilers},
+  booktitle = {Proceedings of the 32nd ACM SIGPLAN Conference on Programming
+               Language Design and Implementation (PLDI)},
+  pages     = {283--294},
+  year      = {2011},
+  doi       = {10.1145/1993498.1993532},
+}
+
+@inproceedings{emi,
+  author    = {Le, Vu and Afshari, Mehrdad and Su, Zhendong},
+  title     = {Compiler Validation via Equivalence Modulo Inputs},
+  booktitle = {Proceedings of the 35th ACM SIGPLAN Conference on Programming
+               Language Design and Implementation (PLDI)},
+  pages     = {216--226},
+  year      = {2014},
+  doi       = {10.1145/2594291.2594334},
+}
+
+% ---------------------------------------------------------------------------
+% Metamorphic and property-based testing
+% ---------------------------------------------------------------------------
+
+@article{chen2018metamorphic,
+  author  = {Chen, Tsong Yueh and Kuo, Fei-Ching and Liu, Huai and Poon,
+             Pak-Lok and Towey, Dave and Tse, T. H. and Zhou, Zhi Quan},
+  title   = {Metamorphic Testing: A Review of Challenges and Opportunities},
+  journal = {ACM Computing Surveys},
+  volume  = {51},
+  number  = {1},
+  year    = {2018},
+  doi     = {10.1145/3143561},
+}
+
+@article{segura2016survey,
+  author  = {Segura, Sergio and Fraser, Gordon and Sanchez, Ana B. and
+             Ruiz-Cort{\'e}s, Antonio},
+  title   = {A Survey on Metamorphic Testing},
+  journal = {IEEE Transactions on Software Engineering},
+  volume  = {42},
+  number  = {9},
+  pages   = {805--824},
+  year    = {2016},
+  doi     = {10.1109/TSE.2016.2532875},
+}
+
+@inproceedings{quickcheck,
+  author    = {Claessen, Koen and Hughes, John},
+  title     = {{QuickCheck}: A Lightweight Tool for Random Testing of {Haskell}
+               Programs},
+  booktitle = {Proceedings of the Fifth ACM SIGPLAN International Conference on
+               Functional Programming (ICFP)},
+  pages     = {268--279},
+  year      = {2000},
+  doi       = {10.1145/351240.351266},
+}
+
+% ---------------------------------------------------------------------------
+% Testing numerical and scientific software
+% ---------------------------------------------------------------------------
+
+@inproceedings{hook2009,
+  author    = {Hook, Daniel and Kelly, Diane},
+  title     = {Testing for Trustworthiness in Scientific Software},
+  booktitle = {Proceedings of the ICSE Workshop on Software Engineering for
+               Computational Science and Engineering (SECSE)},
+  year      = {2009},
+  doi       = {10.1109/SECSE.2009.5069163},
+}
+
+@article{kanewala2014,
+  author  = {Kanewala, Upulee and Bieman, James M.},
+  title   = {Testing Scientific Software: A Systematic Literature Review},
+  journal = {Information and Software Technology},
+  volume  = {56},
+  number  = {10},
+  pages   = {1219--1232},
+  year    = {2014},
+  doi     = {10.1016/j.infsof.2014.05.006},
+}
+
+% ---------------------------------------------------------------------------
+% Mutation testing
+% ---------------------------------------------------------------------------
+
+@article{demillo1978,
+  author  = {DeMillo, Richard A. and Lipton, Richard J. and Sayward,
+             Frederick G.},
+  title   = {Hints on Test Data Selection: Help for the Practicing Programmer},
+  journal = {Computer},
+  volume  = {11},
+  number  = {4},
+  pages   = {34--41},
+  year    = {1978},
+  doi     = {10.1109/C-M.1978.218136},
+}
+
+@article{jia2011,
+  author  = {Jia, Yue and Harman, Mark},
+  title   = {An Analysis and Survey of the Development of Mutation Testing},
+  journal = {IEEE Transactions on Software Engineering},
+  volume  = {37},
+  number  = {5},
+  pages   = {649--678},
+  year    = {2011},
+  doi     = {10.1109/TSE.2010.62},
+}
+
+@inproceedings{muskit,
+  author    = {Mendiluze, E{\~n}aut and Ali, Shaukat and Arcaini, Paolo and
+               Yue, Tao},
+  title     = {{Muskit}: A Mutation Analysis Tool for Quantum Software Testing},
+  booktitle = {Proceedings of the 36th IEEE/ACM International Conference on
+               Automated Software Engineering (ASE), Tool Demonstrations},
+  year      = {2021},
+  doi       = {10.1109/ASE51524.2021.9678563},
+}
+
+% ---------------------------------------------------------------------------
+% Coverage as a measure of test quality
+% ---------------------------------------------------------------------------
+
+@inproceedings{inozemtseva2014,
+  author    = {Inozemtseva, Laura and Holmes, Reid},
+  title     = {Coverage Is Not Strongly Correlated with Test Suite
+               Effectiveness},
+  booktitle = {Proceedings of the 36th International Conference on Software
+               Engineering (ICSE)},
+  pages     = {435--445},
+  year      = {2014},
+  doi       = {10.1145/2568225.2568271},
+}
+
+% ---------------------------------------------------------------------------
+% Quantum software testing
+% ---------------------------------------------------------------------------
+
+@inproceedings{miranskyy2020,
+  author    = {Miranskyy, Andriy and Zhang, Lei and Doliskani, Javad},
+  title     = {Is Your Quantum Program Bug-Free?},
+  booktitle = {Proceedings of the ACM/IEEE 42nd International Conference on
+               Software Engineering: New Ideas and Emerging Results
+               (ICSE-NIER)},
+  year      = {2020},
+  doi       = {10.1145/3377816.3381731},
+}
+
+@inproceedings{ali2021coverage,
+  author    = {Ali, Shaukat and Arcaini, Paolo and Bombarda, Andrea and
+               Yue, Tao},
+  title     = {Assessing the Effectiveness of Input and Output Coverage Criteria
+               for Testing Quantum Programs},
+  booktitle = {Proceedings of the 14th IEEE Conference on Software Testing,
+               Verification and Validation (ICST)},
+  year      = {2021},
+  doi       = {10.1109/ICST49551.2021.00014},
+}
+
+% ---------------------------------------------------------------------------
+% Statevector simulators
+% ---------------------------------------------------------------------------
+
+@article{quest,
+  author  = {Jones, Tyson and Brown, Anna and Bush, Ian and Benjamin,
+             Simon C.},
+  title   = {{QuEST} and High Performance Simulation of Quantum Computers},
+  journal = {Scientific Reports},
+  volume  = {9},
+  pages   = {10736},
+  year    = {2019},
+  doi     = {10.1038/s41598-019-47174-9},
+}
+
+@misc{qiskit,
+  author = {{Qiskit contributors}},
+  title  = {{Qiskit}: An Open-source Framework for Quantum Computing},
+  year   = {2023},
+  doi    = {10.5281/zenodo.2573505},
+}
+
+@article{intelqs,
+  author  = {Guerreschi, Gian Giacomo and Hogaboam, Justin and Baruffa, Fabio
+             and Sawaya, Nicolas P. D.},
+  title   = {Intel Quantum Simulator: A Cloud-Ready High-Performance Simulator
+             of Quantum Circuits},
+  journal = {Quantum Science and Technology},
+  volume  = {5},
+  number  = {3},
+  year    = {2020},
+  doi     = {10.1088/2058-9565/ab8505},
+}
+
+@misc{qsim,
+  author = {{Quantum AI team and collaborators}},
+  title  = {{qsim}},
+  year   = {2020},
+  doi    = {10.5281/zenodo.4023103},
+}
+
+% ---------------------------------------------------------------------------
+% Quantum languages and DSLs
+% ---------------------------------------------------------------------------
+
+@inproceedings{quipper,
+  author    = {Green, Alexander S. and Lumsdaine, Peter LeFanu and Ross,
+               Neil J. and Selinger, Peter and Valiron, Beno{\^i}t},
+  title     = {{Quipper}: A Scalable Quantum Programming Language},
+  booktitle = {Proceedings of the 34th ACM SIGPLAN Conference on Programming
+               Language Design and Implementation (PLDI)},
+  pages     = {333--342},
+  year      = {2013},
+  doi       = {10.1145/2491956.2462177},
+}
+
+@inproceedings{qsharp,
+  author    = {Svore, Krysta and Geller, Alan and Troyer, Matthias and Azariah,
+               John and Granade, Christopher and Heim, Bettina and Kliuchnikov,
+               Vadym and Mykhailova, Mariia and Paz, Andres and Roetteler,
+               Martin},
+  title     = {{Q\#}: Enabling Scalable Quantum Computing and Development with a
+               High-level {DSL}},
+  booktitle = {Proceedings of the Real World Domain Specific Languages Workshop
+               (RWDSL)},
+  year      = {2018},
+  doi       = {10.1145/3183895.3183901},
+}
+
+@inproceedings{silq,
+  author    = {Bichsel, Benjamin and Baader, Maximilian and Gehr, Timon and
+               Vechev, Martin},
+  title     = {{Silq}: A High-Level Quantum Language with Safe Uncomputation and
+               Intuitive Semantics},
+  booktitle = {Proceedings of the 41st ACM SIGPLAN Conference on Programming
+               Language Design and Implementation (PLDI)},
+  pages     = {286--300},
+  year      = {2020},
+  doi       = {10.1145/3385412.3386007},
+}
+
+@inproceedings{scaffcc,
+  author    = {JavadiAbhari, Ali and Patil, Shruti and Kudrow, Daniel and
+               Heckey, Jeff and Lvov, Alexey and Chong, Frederic T. and
+               Martonosi, Margaret},
+  title     = {{ScaffCC}: A Framework for Compilation and Analysis of Quantum
+               Computing Programs},
+  booktitle = {Proceedings of the 11th ACM Conference on Computing Frontiers
+               (CF)},
+  year      = {2014},
+  doi       = {10.1145/2597917.2597939},
+}
+
+@article{projectq,
+  author  = {Steiger, Damian S. and H{\"a}ner, Thomas and Troyer, Matthias},
+  title   = {{ProjectQ}: An Open Source Software Framework for Quantum
+             Computing},
+  journal = {Quantum},
+  volume  = {2},
+  pages   = {49},
+  year    = {2018},
+  doi     = {10.22331/q-2018-01-31-49},
+}
+
+@misc{cirq,
+  author = {{Cirq Developers}},
+  title  = {{Cirq}},
+  year   = {2023},
+  doi    = {10.5281/zenodo.4062499},
+}
+
+% ---------------------------------------------------------------------------
+% Quantum assembly and control
+% ---------------------------------------------------------------------------
+
+@misc{openqasm2,
+  author = {Cross, Andrew W. and Bishop, Lev S. and Smolin, John A. and
+            Gambetta, Jay M.},
+  title  = {Open Quantum Assembly Language},
+  year   = {2017},
+  note   = {arXiv:1707.03429},
+}
+
+@article{openqasm3,
+  author  = {Cross, Andrew and Javadi-Abhari, Ali and Alexander, Thomas and
+             De Beaudrap, Niel and Bishop, Lev S. and Heidel, Steven and Ryan,
+             Colm A. and Sivarajah, Prasahnt and Smolin, John and Gambetta,
+             Jay M. and Johnson, Blake R.},
+  title   = {{OpenQASM} 3: A Broader and Deeper Quantum Assembly Language},
+  journal = {ACM Transactions on Quantum Computing},
+  volume  = {3},
+  number  = {3},
+  year    = {2022},
+  doi     = {10.1145/3505636},
+}
+
+@inproceedings{fu2019eqasm,
+  author    = {Fu, X. and Rol, M. A. and Bultink, C. C. and van Someren, J. and
+               Khammassi, N. and Ashraf, I. and Vermeulen, R. F. L. and de
+               Sterke, J. C. and Vlothuizen, W. J. and Schouten, R. N. and
+               Almudever, C. G. and DiCarlo, L. and Bertels, K.},
+  title     = {{eQASM}: An Executable Quantum Instruction Set Architecture},
+  booktitle = {Proceedings of the IEEE International Symposium on High
+               Performance Computer Architecture (HPCA)},
+  year      = {2019},
+  note      = {arXiv:1808.02449},
+  doi       = {10.1109/HPCA.2019.00040},
+}
+
+@misc{liu2025riscq,
+  author = {Liu, Jiacheng and Lee, Yuhao and Deng, Hanbo and Clayton,
+            Christopher and Yang, Guanhua and Wu, Xin},
+  title  = {{RISC-Q}: A Generator for Real-Time Quantum Control System-on-Chips
+            Compatible with {RISC-V}},
+  year   = {2025},
+  note   = {arXiv:2505.14902},
+}
+
+% ---------------------------------------------------------------------------
+% Simulators and architecture education
+% ---------------------------------------------------------------------------
+
+@misc{rars,
+  author       = {Landers, Benjamin},
+  title        = {{RARS} --- {RISC-V} Assembler and Runtime Simulator},
+  howpublished = {\url{https://github.com/TheThirdOne/rars}},
+}
+
+@inproceedings{mars,
+  author    = {Vollmar, Kenneth and Sanderson, Pete},
+  title     = {{MARS}: An Education-Oriented {MIPS} Assembly Language Simulator},
+  booktitle = {Proceedings of the 37th SIGCSE Technical Symposium on Computer
+               Science Education},
+  pages     = {239--243},
+  year      = {2006},
+  doi       = {10.1145/1121341.1121415},
+}
+
+% ---------------------------------------------------------------------------
+% Quantum computing education
+% ---------------------------------------------------------------------------
+
+@inproceedings{mykhailova2020,
+  author    = {Mykhailova, Mariia and Svore, Krysta M.},
+  title     = {Teaching Quantum Computing through a Practical Software-Driven
+               Approach: Experience Report},
+  booktitle = {Proceedings of the 51st ACM Technical Symposium on Computer
+               Science Education (SIGCSE)},
+  pages     = {1019--1025},
+  year      = {2020},
+  doi       = {10.1145/3328778.3366952},
+}
+
+@inproceedings{seegerer2021,
+  author    = {Seegerer, Stefan and Michaeli, Tilman and Romeike, Ralf},
+  title     = {Quantum Computing as a Topic in Computer Science Education},
+  booktitle = {Proceedings of the 16th Workshop in Primary and Secondary
+               Computing Education (WiPSCE)},
+  year      = {2021},
+  doi       = {10.1145/3481312.3481348},
+}
+
+@inproceedings{qdiff,
+  author    = {Wang, Jiyuan and Zhang, Qian and Xu, Guoqing Harry and
+               Kim, Miryung},
+  title     = {{QDiff}: Differential Testing of Quantum Software Stacks},
+  booktitle = {Proceedings of the 36th IEEE/ACM International Conference on
+               Automated Software Engineering (ASE)},
+  pages     = {692--704},
+  year      = {2021},
+  doi       = {10.1109/ASE51524.2021.00067},
+}
+
+@inproceedings{morphq,
+  author    = {Paltenghi, Matteo and Pradel, Michael},
+  title     = {{MorphQ}: Metamorphic Testing of the {Qiskit} Quantum Computing
+               Platform},
+  booktitle = {Proceedings of the 45th IEEE/ACM International Conference on
+               Software Engineering (ICSE)},
+  year      = {2023},
+}
+
+@article{paltenghi2022bugs,
+  author  = {Paltenghi, Matteo and Pradel, Michael},
+  title   = {Bugs in Quantum Computing Platforms: An Empirical Study},
+  journal = {Proceedings of the ACM on Programming Languages},
+  volume  = {6},
+  number  = {OOPSLA1},
+  note    = {Article 86},
+  year    = {2022},
+  doi     = {10.1145/3527330},
+}
+
+@article{voas1992pie,
+  author  = {Voas, Jeffrey M.},
+  title   = {{PIE}: A Dynamic Failure-Based Technique},
+  journal = {IEEE Transactions on Software Engineering},
+  volume  = {18},
+  number  = {8},
+  pages   = {717--727},
+  year    = {1992},
+  doi     = {10.1109/32.153381},
+}
+
+% ---------------------------------------------------------------------------
+% Artifacts and reproducibility
+% ---------------------------------------------------------------------------
+
+@article{krishnamurthi2015,
+  author  = {Krishnamurthi, Shriram and Vitek, Jan},
+  title   = {The Real Software Crisis: Repeatability as a Core Value},
+  journal = {Communications of the ACM},
+  volume  = {58},
+  number  = {3},
+  pages   = {34--36},
+  year    = {2015},
+  doi     = {10.1145/2658987},
+}
+
+% ---------------------------------------------------------------------------
+% Texts
+% ---------------------------------------------------------------------------
+
+@book{nielsen,
+  author    = {Nielsen, Michael A. and Chuang, Isaac L.},
+  title     = {Quantum Computation and Quantum Information},
+  publisher = {Cambridge University Press},
+  edition   = {10th Anniversary},
+  year      = {2010},
+}

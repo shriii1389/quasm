@@ -1,0 +1,5 @@
+# name: a 1022-byte line is the longest that fits, and it runs
+qubit q[1]
+qubitop1 q[0] = X                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+print(q)
+end

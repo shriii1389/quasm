@@ -1,0 +1,234 @@
+\begin{thebibliography}{10}
+
+\bibitem{ali2021coverage}
+Shaukat Ali, Paolo Arcaini, Andrea Bombarda, and Tao Yue.
+\newblock Assessing the effectiveness of input and output coverage criteria for
+  testing quantum programs.
+\newblock In {\em Proceedings of the 14th IEEE Conference on Software Testing,
+  Verification and Validation (ICST)}, 2021.
+
+\bibitem{silq}
+Benjamin Bichsel, Maximilian Baader, Timon Gehr, and Martin Vechev.
+\newblock {Silq}: A high-level quantum language with safe uncomputation and
+  intuitive semantics.
+\newblock In {\em Proceedings of the 41st ACM SIGPLAN Conference on Programming
+  Language Design and Implementation (PLDI)}, pages 286--300, 2020.
+
+\bibitem{chen2018metamorphic}
+Tsong~Yueh Chen, Fei-Ching Kuo, Huai Liu, Pak-Lok Poon, Dave Towey, T.~H. Tse,
+  and Zhi~Quan Zhou.
+\newblock Metamorphic testing: A review of challenges and opportunities.
+\newblock {\em ACM Computing Surveys}, 51(1), 2018.
+
+\bibitem{cirq}
+{Cirq Developers}.
+\newblock {Cirq}, 2023.
+
+\bibitem{quickcheck}
+Koen Claessen and John Hughes.
+\newblock {QuickCheck}: A lightweight tool for random testing of {Haskell}
+  programs.
+\newblock In {\em Proceedings of the Fifth ACM SIGPLAN International Conference
+  on Functional Programming (ICFP)}, pages 268--279, 2000.
+
+\bibitem{openqasm3}
+Andrew Cross, Ali Javadi-Abhari, Thomas Alexander, Niel De~Beaudrap, Lev~S.
+  Bishop, Steven Heidel, Colm~A. Ryan, Prasahnt Sivarajah, John Smolin, Jay~M.
+  Gambetta, and Blake~R. Johnson.
+\newblock {OpenQASM} 3: A broader and deeper quantum assembly language.
+\newblock {\em ACM Transactions on Quantum Computing}, 3(3), 2022.
+
+\bibitem{openqasm2}
+Andrew~W. Cross, Lev~S. Bishop, John~A. Smolin, and Jay~M. Gambetta.
+\newblock Open quantum assembly language, 2017.
+\newblock arXiv:1707.03429.
+
+\bibitem{demillo1978}
+Richard~A. DeMillo, Richard~J. Lipton, and Frederick~G. Sayward.
+\newblock Hints on test data selection: Help for the practicing programmer.
+\newblock {\em Computer}, 11(4):34--41, 1978.
+
+\bibitem{fu2019eqasm}
+X.~Fu, M.~A. Rol, C.~C. Bultink, J.~van Someren, N.~Khammassi, I.~Ashraf,
+  R.~F.~L. Vermeulen, J.~C. de~Sterke, W.~J. Vlothuizen, R.~N. Schouten, C.~G.
+  Almudever, L.~DiCarlo, and K.~Bertels.
+\newblock {eQASM}: An executable quantum instruction set architecture.
+\newblock In {\em Proceedings of the IEEE International Symposium on High
+  Performance Computer Architecture (HPCA)}, 2019.
+\newblock arXiv:1808.02449.
+
+\bibitem{quipper}
+Alexander~S. Green, Peter~LeFanu Lumsdaine, Neil~J. Ross, Peter Selinger, and
+  Beno{\^i}t Valiron.
+\newblock {Quipper}: A scalable quantum programming language.
+\newblock In {\em Proceedings of the 34th ACM SIGPLAN Conference on Programming
+  Language Design and Implementation (PLDI)}, pages 333--342, 2013.
+
+\bibitem{intelqs}
+Gian~Giacomo Guerreschi, Justin Hogaboam, Fabio Baruffa, and Nicolas P.~D.
+  Sawaya.
+\newblock Intel quantum simulator: A cloud-ready high-performance simulator of
+  quantum circuits.
+\newblock {\em Quantum Science and Technology}, 5(3), 2020.
+
+\bibitem{hook2009}
+Daniel Hook and Diane Kelly.
+\newblock Testing for trustworthiness in scientific software.
+\newblock In {\em Proceedings of the ICSE Workshop on Software Engineering for
+  Computational Science and Engineering (SECSE)}, 2009.
+
+\bibitem{inozemtseva2014}
+Laura Inozemtseva and Reid Holmes.
+\newblock Coverage is not strongly correlated with test suite effectiveness.
+\newblock In {\em Proceedings of the 36th International Conference on Software
+  Engineering (ICSE)}, pages 435--445, 2014.
+
+\bibitem{scaffcc}
+Ali JavadiAbhari, Shruti Patil, Daniel Kudrow, Jeff Heckey, Alexey Lvov,
+  Frederic~T. Chong, and Margaret Martonosi.
+\newblock {ScaffCC}: A framework for compilation and analysis of quantum
+  computing programs.
+\newblock In {\em Proceedings of the 11th ACM Conference on Computing Frontiers
+  (CF)}, 2014.
+
+\bibitem{jia2011}
+Yue Jia and Mark Harman.
+\newblock An analysis and survey of the development of mutation testing.
+\newblock {\em IEEE Transactions on Software Engineering}, 37(5):649--678,
+  2011.
+
+\bibitem{quest}
+Tyson Jones, Anna Brown, Ian Bush, and Simon~C. Benjamin.
+\newblock {QuEST} and high performance simulation of quantum computers.
+\newblock {\em Scientific Reports}, 9:10736, 2019.
+
+\bibitem{kanewala2014}
+Upulee Kanewala and James~M. Bieman.
+\newblock Testing scientific software: A systematic literature review.
+\newblock {\em Information and Software Technology}, 56(10):1219--1232, 2014.
+
+\bibitem{krishnamurthi2015}
+Shriram Krishnamurthi and Jan Vitek.
+\newblock The real software crisis: Repeatability as a core value.
+\newblock {\em Communications of the ACM}, 58(3):34--36, 2015.
+
+\bibitem{rars}
+Benjamin Landers.
+\newblock {RARS} --- {RISC-V} assembler and runtime simulator.
+\newblock \url{https://github.com/TheThirdOne/rars}.
+
+\bibitem{emi}
+Vu~Le, Mehrdad Afshari, and Zhendong Su.
+\newblock Compiler validation via equivalence modulo inputs.
+\newblock In {\em Proceedings of the 35th ACM SIGPLAN Conference on Programming
+  Language Design and Implementation (PLDI)}, pages 216--226, 2014.
+
+\bibitem{liu2025riscq}
+Jiacheng Liu, Yuhao Lee, Hanbo Deng, Christopher Clayton, Guanhua Yang, and Xin
+  Wu.
+\newblock {RISC-Q}: A generator for real-time quantum control system-on-chips
+  compatible with {RISC-V}, 2025.
+\newblock arXiv:2505.14902.
+
+\bibitem{mckeeman1998}
+William~M. McKeeman.
+\newblock Differential testing for software.
+\newblock {\em Digital Technical Journal}, 10(1):100--107, 1998.
+
+\bibitem{muskit}
+E{\~n}aut Mendiluze, Shaukat Ali, Paolo Arcaini, and Tao Yue.
+\newblock {Muskit}: A mutation analysis tool for quantum software testing.
+\newblock In {\em Proceedings of the 36th IEEE/ACM International Conference on
+  Automated Software Engineering (ASE), Tool Demonstrations}, 2021.
+
+\bibitem{miranskyy2020}
+Andriy Miranskyy, Lei Zhang, and Javad Doliskani.
+\newblock Is your quantum program bug-free?
+\newblock In {\em Proceedings of the ACM/IEEE 42nd International Conference on
+  Software Engineering: New Ideas and Emerging Results (ICSE-NIER)}, 2020.
+
+\bibitem{mykhailova2020}
+Mariia Mykhailova and Krysta~M. Svore.
+\newblock Teaching quantum computing through a practical software-driven
+  approach: Experience report.
+\newblock In {\em Proceedings of the 51st ACM Technical Symposium on Computer
+  Science Education (SIGCSE)}, pages 1019--1025, 2020.
+
+\bibitem{nielsen}
+Michael~A. Nielsen and Isaac~L. Chuang.
+\newblock {\em Quantum Computation and Quantum Information}.
+\newblock Cambridge University Press, 10th anniversary edition, 2010.
+
+\bibitem{paltenghi2022bugs}
+Matteo Paltenghi and Michael Pradel.
+\newblock Bugs in quantum computing platforms: An empirical study.
+\newblock {\em Proceedings of the ACM on Programming Languages}, 6(OOPSLA1),
+  2022.
+\newblock Article 86.
+
+\bibitem{morphq}
+Matteo Paltenghi and Michael Pradel.
+\newblock {MorphQ}: Metamorphic testing of the {Qiskit} quantum computing
+  platform.
+\newblock In {\em Proceedings of the 45th IEEE/ACM International Conference on
+  Software Engineering (ICSE)}, 2023.
+
+\bibitem{qiskit}
+{Qiskit contributors}.
+\newblock {Qiskit}: An open-source framework for quantum computing, 2023.
+
+\bibitem{qsim}
+{Quantum AI team and collaborators}.
+\newblock {qsim}, 2020.
+
+\bibitem{seegerer2021}
+Stefan Seegerer, Tilman Michaeli, and Ralf Romeike.
+\newblock Quantum computing as a topic in computer science education.
+\newblock In {\em Proceedings of the 16th Workshop in Primary and Secondary
+  Computing Education (WiPSCE)}, 2021.
+
+\bibitem{segura2016survey}
+Sergio Segura, Gordon Fraser, Ana~B. Sanchez, and Antonio Ruiz-Cort{\'e}s.
+\newblock A survey on metamorphic testing.
+\newblock {\em IEEE Transactions on Software Engineering}, 42(9):805--824,
+  2016.
+
+\bibitem{projectq}
+Damian~S. Steiger, Thomas H{\"a}ner, and Matthias Troyer.
+\newblock {ProjectQ}: An open source software framework for quantum computing.
+\newblock {\em Quantum}, 2:49, 2018.
+
+\bibitem{qsharp}
+Krysta Svore, Alan Geller, Matthias Troyer, John Azariah, Christopher Granade,
+  Bettina Heim, Vadym Kliuchnikov, Mariia Mykhailova, Andres Paz, and Martin
+  Roetteler.
+\newblock {Q\#}: Enabling scalable quantum computing and development with a
+  high-level {DSL}.
+\newblock In {\em Proceedings of the Real World Domain Specific Languages
+  Workshop (RWDSL)}, 2018.
+
+\bibitem{voas1992pie}
+Jeffrey~M. Voas.
+\newblock {PIE}: A dynamic failure-based technique.
+\newblock {\em IEEE Transactions on Software Engineering}, 18(8):717--727,
+  1992.
+
+\bibitem{mars}
+Kenneth Vollmar and Pete Sanderson.
+\newblock {MARS}: An education-oriented {MIPS} assembly language simulator.
+\newblock In {\em Proceedings of the 37th SIGCSE Technical Symposium on
+  Computer Science Education}, pages 239--243, 2006.
+
+\bibitem{qdiff}
+Jiyuan Wang, Qian Zhang, Guoqing~Harry Xu, and Miryung Kim.
+\newblock {QDiff}: Differential testing of quantum software stacks.
+\newblock In {\em Proceedings of the 36th IEEE/ACM International Conference on
+  Automated Software Engineering (ASE)}, pages 692--704, 2021.
+
+\bibitem{csmith}
+Xuejun Yang, Yang Chen, Eric Eide, and John Regehr.
+\newblock Finding and understanding bugs in {C} compilers.
+\newblock In {\em Proceedings of the 32nd ACM SIGPLAN Conference on Programming
+  Language Design and Implementation (PLDI)}, pages 283--294, 2011.
+
+\end{thebibliography}

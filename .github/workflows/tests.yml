@@ -1,0 +1,84 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  # The fast gate: everything that does not need a JVM per program. Runs on
+  # every push.
+  fast:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Audit gate matrices
+        run: python tools/check_gate_data.py
+
+      # Confirms the property checks fail when their invariants are violated.
+      # A property suite that cannot fail is not evidence, so this guards the
+      # guard.
+      - name: Property self-test
+        run: python tools/properties.py --self-test
+
+      - name: Properties against the reference oracle
+        run: python tools/properties.py --n 200
+
+      # Confirms the qubit mapping is right and that the comparison fails when
+      # the mapping or a gate constant is deliberately broken.
+      - name: Cross-validation self-test
+        run: python tools/cross_validate.py --self-test
+
+      # Only the oracle-vs-Qiskit sweep runs here. It needs no JVM and takes
+      # seconds; the RARS-inclusive sweep is on the schedule below.
+      - name: Cross-validate against Qiskit
+        run: python tools/cross_validate.py --seed 0 --n 2000 --max-qubits 5
+
+  # The real thing: every test program through the actual assembly under RARS,
+  # then a differential fuzzing run against the oracle.
+  suite:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch RARS
+        run: bash tools/fetch_rars.sh
+
+      - name: Audit gate matrices
+        run: python tools/check_gate_data.py
+
+      # The suite runs through tools/rars_server.py, one long-lived RARS per
+      # worker. This confirms nothing leaks between runs and that its output is
+      # byte-for-byte what the RARS command line gives.
+      - name: Check the RARS server against the command line
+        run: python tools/rars_server.py
+
+      - name: Run test suite
+        run: python tools/run_tests.py -j 4
+
+      - name: Differential fuzzing against the oracle
+        run: python -u tools/fuzz.py --n 300 -j 4
+
+# The RARS-inclusive cross-validation sweep and the mutation experiments are
+# deliberately NOT on the push path: the mutation run assembles a fresh
+# interpreter per mutant, which is hours. They live in deep.yml, on a weekly
+# schedule and on workflow_dispatch.

@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+title: "QuAsm: a quantum-simulator DSL interpreted by hand-written RISC-V assembly"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: Keshav
+    given-names: Shriharshith
+    email: shriharshithkeshav@gmail.com
+repository-code: "https://github.com/shriii1389/quasm"
+license: MIT
+version: 1.0.0
+date-released: 2026-11-08
+keywords:
+  - quantum computing
+  - statevector simulation
+  - RISC-V
+  - assembly language
+  - domain-specific language
+  - differential testing
+  - computer architecture education
+abstract: >-
+  QuAsm is a domain-specific language for statevector quantum simulation whose
+  entire interpreter is hand-written RISC-V assembly, with no library
+  underneath: the parser, the complex arithmetic, the symbol tables, the
+  pseudorandom number generator, the depolarising noise channel and the control
+  flow are all assembly, running under the RARS simulator. Programs declare
+  registers of up to six qubits, apply single- and two-qubit gates including a
+  controlled-phase family sufficient for the quantum Fourier transform, measure
+  and collapse, branch on measurement outcomes, and loop. Correctness is
+  established by differential testing against an independent NumPy oracle built
+  deliberately on different algorithms, a static audit of the gate matrices,
+  replay of observed measurement outcomes, cross-validation against Qiskit,
+  metamorphic properties and grammar-based differential fuzzing, with mutation
+  analysis measuring what each layer catches. The defects that effort found,
+  and why behavioural tests missed them, are the substance of the accompanying
+  paper.
