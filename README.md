@@ -296,6 +296,11 @@ control surface is, not a claim to have built a controller. (Unrelated project, 
 name: [RISC-Q](https://arxiv.org/abs/2505.14902) by Liu et al. is a generator for real
 quantum control SoCs.)
 
+## Contributors
+
+- [Shriharshith Keshav](https://github.com/shriii1389)
+- [Infinittle](https://github.com/Infinittle)
+
 ## License
 
 MIT, see [LICENSE](LICENSE).

@@ -6,6 +6,8 @@ authors:
   - family-names: Keshav
     given-names: Shriharshith
     email: shriharshithkeshav@gmail.com
+  - alias: Infinittle
+    website: "https://github.com/Infinittle"
 repository-code: "https://github.com/shriii1389/quasm"
 license: MIT
 version: 1.0.0
